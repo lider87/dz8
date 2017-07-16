@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.conteiner {
+	width: 1500px;
+	margin: 0 auto;
+}
+/*Шапка сайта*/
+.header {
+	background-color: #abeafa;
+	width: 1500px;
+	height: 700px;
+}
+/*Обертка и все что в ней*/
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+.brand {
+	width: 100%;
+	height: 160px;
+	float: left;
+}
+.instagramm {
+	width: 100%;
+	height: 350px;
+}
+.social_button {
+	width: 100%;
+	height: 150px;
+}
+/*футтер*/
+.footer {
+	width: 100%
+	height: 348px;
+	background-color: #373737;
+}
