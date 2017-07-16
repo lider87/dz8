@@ -5,6 +5,9 @@
 .conteiner {
 	width: 1500px;
 	margin: 0 auto;
+	background-color: #f8f8f8;
+	display: flex;
+	flex-wrap: wrap;
 }
 /*Шапка сайта*/
 .header {
@@ -12,10 +15,37 @@
 	width: 1500px;
 	height: 700px;
 }
-/*Обертка и все что в ней*/
+.logo {
+	width: 125px;
+	height: 111px;
+	margin-top: 24px;
+	margin-left: 234px;
+}
+.welcome {
+	width: 270px;
+	height: 300px;
+	background-color: #fff51f;
+}
+.banner {
+	width: 313px;
+	height: 286px;/*не точно*/
+}
+/*Обертка*/
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
+}
+/*меню*/
+.aside {
+	width: 270px;
+	height: 805px;/*высота может быть другой!*/
+	float: left;
+}
+/*Обертка для товаров*/
+.content {
+	width: 870px;
+	height: 1656px;/*высота может быть другой!*/
+	float: right;
 }
 .brand {
 	width: 100%;
@@ -32,7 +62,8 @@
 }
 /*футтер*/
 .footer {
-	width: 100%
+	width: 100%;
 	height: 348px;
 	background-color: #373737;
+	align-self: flex-end;
 }
