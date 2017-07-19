@@ -125,6 +125,17 @@
 	line-height: 49px;
 	margin: 62px 0 0 3px;
 }
+.button_buy:hover {
+	background-color: #000000;
+	font-family: 'Raleway', 'Arial', sans-serif;
+	color: #fff51f;
+	font-size: 14px;
+	font-weight: 800;
+	text-decoration: none;
+	text-align: center;
+	line-height: 49px;
+	margin: 62px 0 0 3px;
+}
 /*Обертка*/
 .wrapper {
 	width: 1170px;
