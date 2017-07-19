@@ -61,12 +61,15 @@
 .clearfix {
 	clear: both;
 }
+/*Желтый блок слева в шапке*/
 .welcome {
 	width: 270px;
 	height: 300px;
 	background-color: #fff51f;
 	margin-top: 201px;
 	margin-left: 165px;
+	float: left;
+
 }
 .welcome_msg {
 	font-family: 'Raleway', 'Arial', sans-serif;
@@ -87,9 +90,40 @@
 	text-align: left;
 	padding: 24px 30px 82px 22px;
 }
+/*блок справа с текстом*/
 .banner {
-	width: 313px;
+	width: 315px;
 	height: 286px;/*не точно*/
+	float: right;
+	margin: 108px 274px 0 0; /*расположить правильно верх-низ*/
+}
+.banner_msg {
+	font-family: 'Raleway', 'Arial', sans-serif;
+	color: #fff51f;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 34px;
+}
+.banner_mini {
+	font-family: 'Raleway', 'Arial', sans-serif;
+	color: #fff51f;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.button_buy {
+	width: 124px;
+	height: 49px;
+	display: block;
+	background-color: #fff51f;
+	font-family: 'Raleway', 'Arial', sans-serif;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 800;
+	text-decoration: none;
+	text-align: center;
+	line-height: 49px;
+	margin: 62px 0 0 3px;
 }
 /*Обертка*/
 .wrapper {
