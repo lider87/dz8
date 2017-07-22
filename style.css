@@ -163,7 +163,6 @@ li {
 /*меню*/
 .aside {
 	width: 270px;
-	height: 805px;/*высота может быть другой!*/
 	float: left;
 }
 .title {
