@@ -1,10 +1,28 @@
 @font-face {
+	font-family: 'Raleway-Bold';
+	src: url(fonts/Raleway-Bold.ttf);
+}
+@font-face {
 	font-family: 'Raleway';
 	src: url(fonts/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family: 'Raleway-BoldItalic';
+	src: url(fonts/Raleway-BoldItalic.ttf);
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url(fonts/Roboto-Black.ttf);
 }
 * {
 	margin: 0;
 	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
 }
 .conteiner {
 	width: 1500px;
@@ -39,15 +57,17 @@
 	height: 16px;
 	background-image: url('img/iconmini.png');
 	display: inline-block;
-	margin-left: 4px;
+	margin-left: 6px;
 }
 /*наверное, лучше прописать 
 марджин каждой иконке для пиксельпёфект*/
 .facebook {
 	background-position: 0px 0px;
+	margin-left: 0px;
 }
 .twitter {
-	background-position: -23px 0px;
+	background-position: -24px 0px;
+	margin-left: 5px;
 }
 .youtube {
 	background-position: -50px 0px;
@@ -72,23 +92,24 @@
 
 }
 .welcome_msg {
-	font-family: 'Raleway', 'Arial', sans-serif;
+	font-family: 'Raleway-Bold', 'Arial', sans-serif;
 	color: #333333;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 30px;
 	text-align: left;
 	display: block;
-	padding: 82px 0 0 25px;
+	padding: 79px 0 0 24px;
 }
 .welcome_mini {
-	font-family: 'Raleway', 'Arial', sans-serif;
+	font-family: 'Raleway-Bold', 'Arial', sans-serif;
 	color: #333333;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 14px;
 	text-align: left;
-	padding: 24px 30px 82px 22px;
+	font-style: italic;
+	padding: 20px 29px 82px 20px;
 }
 /*блок справа с текстом*/
 .banner {
@@ -98,7 +119,7 @@
 	margin: 108px 274px 0 0; /*расположить правильно верх-низ*/
 }
 .banner_msg {
-	font-family: 'Raleway', 'Arial', sans-serif;
+	font-family: 'Raleway-Bold', 'Arial', sans-serif;
 	color: #fff51f;
 	font-size: 48px;
 	font-weight: 700;
@@ -110,13 +131,15 @@
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 24px;
+	margin-top: -3px;
 }
+/*Посмотри стилизацию затемнение и засветлить на процент тона*/
 .button_buy {
 	width: 124px;
 	height: 49px;
 	display: block;
 	background-color: #fff51f;
-	font-family: 'Raleway', 'Arial', sans-serif;
+	font-family: 'Raleway-Bold', 'Arial', sans-serif;
 	color: #000000;
 	font-size: 14px;
 	font-weight: 800;
@@ -139,6 +162,37 @@
 	width: 270px;
 	height: 805px;/*высота может быть другой!*/
 	float: left;
+}
+.title {
+	width: 270px;
+	height: 66px;
+	background-color: #333333;
+	margin-top: -20px;
+}
+.title_menu {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 32px;
+	text-align: left;
+	display: block;
+	padding: 21px 0px 0px 41px;
+}
+.menu {
+	width: 270px;
+	height: 409px;
+	background-color: #26d2fc;
+}
+.menu_item {
+	width: 100%;
+	display: block;
+	font-family: 'Roboto';
+	color: #000000;
+	font-size: 14px;
+	font-weight: 900;
+	line-height: 36px;
+	text-align: left;
 }
 /*Обертка для товаров*/
 .content {
