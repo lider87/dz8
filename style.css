@@ -14,6 +14,10 @@
 	font-family: 'Roboto';
 	src: url(fonts/Roboto-Black.ttf);
 }
+@font-face {
+	font-family: 'Raleway-ExtraBoldItalic';
+	src: url(fonts/Raleway-ExtraBoldItalic.ttf)
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -206,14 +210,17 @@ li {
 	margin-top: 30px;
 }
 .open_txt {
+	width: 109px;
+	height: 98px;
 	display: block;
-	flex-wrap: flex-end;
-	font-family: 'Raleway';
+	font-family: 'Raleway-ExtraBoldItalic';
 	color: #333333;
 	font-size: 36px;
 	font-weight: 800;
 	line-height: 36px;
+	text-transform: uppercase;
 	text-align: left;
+	padding: 127px 19px 73px 142px;
 }
 /*Обертка для товаров*/
 .content {
