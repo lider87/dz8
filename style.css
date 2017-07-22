@@ -46,7 +46,7 @@ li {
 }
 /*социальные иконки в верхнем правом углу*/
 .social {
-	width: 120px;
+	width: 125px;
 	height:16px;
 	float: right;
 	margin-top: 51px;
@@ -62,21 +62,20 @@ li {
 /*наверное, лучше прописать 
 марджин каждой иконке для пиксельпёфект*/
 .facebook {
-	background-position: 0px 0px;
-	margin-left: 0px;
+	background-position: -5px 0px;
 }
 .twitter {
-	background-position: -24px 0px;
+	background-position: -26px -2px;
 	margin-left: 5px;
 }
 .youtube {
-	background-position: -50px 0px;
+	background-position: -53px -1px;
 }
 .pinterest {
-	background-position: -78px 0px;
+	background-position: -79px 0px;
 }
 .insta {
-	background-position: -104px 0px;
+	background-position: -106px 0px;
 }
 .clearfix {
 	clear: both;
@@ -164,7 +163,7 @@ li {
 	float: left;
 }
 .title {
-	width: 270px;
+	width: 100%;
 	height: 66px;
 	background-color: #333333;
 	margin-top: -20px;
@@ -180,7 +179,7 @@ li {
 	padding: 21px 0px 0px 41px;
 }
 .menu {
-	width: 270px;
+	width: 100%;
 	height: 409px;
 	background-color: #26d2fc;
 }
@@ -199,6 +198,22 @@ li {
 .menu_item:hover {
 	background-color: #333333;
 	color: #ffffff;
+}
+.open {
+	width: 100%;
+	height: 300px;
+	background-color: #e0e0e0;
+	margin-top: 30px;
+}
+.open_txt {
+	display: block;
+	flex-wrap: flex-end;
+	font-family: 'Raleway';
+	color: #333333;
+	font-size: 36px;
+	font-weight: 800;
+	line-height: 36px;
+	text-align: left;
 }
 /*Обертка для товаров*/
 .content {
