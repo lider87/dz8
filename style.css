@@ -18,6 +18,10 @@
 	font-family: 'Raleway-ExtraBoldItalic';
 	src: url(fonts/Raleway-ExtraBoldItalic.ttf)
 }
+@font-face {
+	font-family: 'Roboto-BlackItalic';
+	src: url(fonts/Roboto-BlackItalic.ttf);
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -56,6 +60,7 @@ li {
 	margin-top: 51px;
 	margin-right: 229px;
 }
+/*Почему когда уменьшаю сайт иконки прыгают на строчку ниже??*/
 .social_icon {
 	width: 16px;
 	height: 16px;
@@ -169,7 +174,7 @@ li {
 	width: 100%;
 	height: 66px;
 	background-color: #333333;
-	margin-top: -20px;
+	margin-top: -19px;
 }
 .title_menu {
 	font-family: 'Roboto', 'Arial', sans-serif;
@@ -215,17 +220,119 @@ li {
 	font-family: 'Raleway-ExtraBoldItalic';
 	color: #333333;
 	font-size: 36px;
-	font-weight: 800;
 	line-height: 36px;
 	text-transform: uppercase;
+	font-weight: 800;
 	text-align: left;
-	padding: 127px 19px 73px 142px;
+	padding: 125px 19px 73px 142px;
 }
 /*Обертка для товаров*/
 .content {
 	width: 870px;
 	height: 1656px;/*высота может быть другой!*/
 	float: right;
+	background-color: #f8f8f8;
+	margin-top: -19px;
+}
+h2 {
+	font-family: 'Roboto-BlackItalic';
+	color: #707070;
+	font-size: 22px;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: left;
+	margin-top: 27px;
+	margin-left: 24px;
+	display: inline-block;
+}
+.new_product {
+	width: 870px;
+	height: 699px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.product {
+	width: 250px;
+	height: 300px;
+	background-color: #ffffff;
+	padding: 10px;
+	position: relative;
+	margin-top: 24px;
+}
+.product_photo {
+	width: 100%;
+	height: 235px;
+	background-color: #eaeaea;
+}
+.photonew {
+	width: 0px;
+	height: 0px;
+	display: block;
+	position: absolute;
+	border: 23px solid transparent;
+	border-top: 23px solid #e24602;
+	border-right: 23px solid #e24602;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 83%;
+}
+.photonew:before {
+	content: "NEW";
+	font-family: 'Roboto';
+	color: #ffffff;
+	font-size: 9px;
+	font-weight: 400;
+	text-align: left;
+	position: absolute;
+	top: -12px;
+}
+.photohot {
+	width: 0px;
+	height: 0px;
+	display: block;
+	position: absolute;
+	border: 23px solid transparent;
+	border-top: 23px solid #faef03;
+	border-right: 23px solid #faef03;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 83%;
+}
+.photohot:before {
+	content: "HOT";
+	font-family: 'Roboto';
+	color: #000000;
+	font-size: 9px;
+	font-weight: 400;
+	text-align: left;
+	position: absolute;
+	top: -12px;
+}
+.product_name {
+	font-family: 'Roboto', 'Arial',sans-serif;
+	color:  #333333;
+	font-size: 14px;
+	font-weight: 900;
+	font-style: italic;
+	line-height: 18.012px;
+	text-align: left;
+	display: inline-block;
+	margin-left: 14px;
+}
+.product_price {
+	font-family: 'Roboto', 'Arial',sans-serif;
+	color:  #333333;
+	font-size: 18px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: right;
+	margin-left: 11px;
+	margin-top: 12px;
+	display: inline-block;
+	/*padding-top: 3px;*/
 }
 .brand {
 	width: 100%;
