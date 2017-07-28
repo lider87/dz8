@@ -12,7 +12,7 @@
 }
 @font-face {
 	font-family: 'Roboto';
-	src: url(fonts/Roboto-Black.ttf);
+	src: url(fonts/Roboto-Regular.ttf);
 }
 @font-face {
 	font-family: 'Raleway-ExtraBoldItalic';
@@ -53,7 +53,7 @@ li {
 	float: left;
 }
 /*социальные иконки в верхнем правом углу*/
-.social {
+.social_up {
 	width: 125px;
 	height:16px;
 	float: right;
@@ -61,29 +61,27 @@ li {
 	margin-right: 229px;
 }
 /*Почему когда уменьшаю сайт иконки прыгают на строчку ниже??*/
-.social_icon {
+.social_icon_up {
 	width: 16px;
 	height: 16px;
 	background-image: url('img/iconmini.png');
 	display: inline-block;
 	margin-left: 6px;
 }
-/*наверное, лучше прописать 
-марджин каждой иконке для пиксельпёфект*/
-.facebook {
+.fb_up {
 	background-position: -5px 0px;
 }
-.twitter {
+.twt_up {
 	background-position: -26px -2px;
 	margin-left: 5px;
 }
-.youtube {
+.yt_up {
 	background-position: -53px -1px;
 }
-.pinterest {
+.pt_up {
 	background-position: -79px 0px;
 }
-.insta {
+.inst_up {
 	background-position: -106px 0px;
 }
 .clearfix {
@@ -97,7 +95,6 @@ li {
 	margin-top: 201px;
 	margin-left: 165px;
 	float: left;
-
 }
 .welcome_msg {
 	font-family: 'Raleway-Bold', 'Arial', sans-serif;
@@ -195,7 +192,7 @@ li {
 	width: 100%;
 	height: 37px;
 	display: block;
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	color: #000000;
 	font-size: 14px;
 	font-weight: 900;
@@ -217,7 +214,7 @@ li {
 	width: 109px;
 	height: 98px;
 	display: block;
-	font-family: 'Raleway-ExtraBoldItalic';
+	font-family: 'Raleway-ExtraBoldItalic', 'Arial', sans-serif;
 	color: #333333;
 	font-size: 36px;
 	line-height: 36px;
@@ -235,7 +232,7 @@ li {
 	margin-top: -19px;
 }
 h2 {
-	font-family: 'Roboto-BlackItalic';
+	font-family: 'Roboto-BlackItalic', 'Arial', sans-serif;
 	color: #707070;
 	font-size: 22px;
 	font-weight: 900;
@@ -244,14 +241,18 @@ h2 {
 	margin-left: 24px;
 	display: inline-block;
 }
-.new, .sale {
+.new,
+.sale {
 	margin-top: 27px;
 }
 .top {
 	margin-top: 66px;
 }
-.new_product, .top_product, .sale_product {
-	width: 870px;
+.new_product,
+.top_product,
+.sale_product,
+.photo_instagramm {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -259,7 +260,8 @@ h2 {
 .new_product {
 	height: 699px;
 }
-.top_product, .sale_product {
+.top_product,
+.sale_product {
 	height: 400px;
 }
 .product {
@@ -290,7 +292,7 @@ h2 {
 }
 .photonew:before {
 	content: "NEW";
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	color: #ffffff;
 	font-size: 9px;
 	font-weight: 400;
@@ -313,7 +315,7 @@ h2 {
 }
 .photohot:before {
 	content: "HOT";
-	font-family: 'Roboto';
+	font-family: 'Roboto', 'Arial', sans-serif;
 	color: #000000;
 	font-size: 9px;
 	font-weight: 400;
@@ -339,31 +341,30 @@ h2 {
 	font-weight: 900;
 	font-style: italic;
 	text-align: right;
-	margin-left: 6px;
+	margin-left: 14px;
 	margin-top: 12px;
 	display: inline-block;
 }
 .sale_price {
-	font-family: Roboto;
+	font-family: 'Roboto', 'Arial', sans-serif; 
 	color: #fa0000;
 	font-size: 14px;
 	font-weight: 900;
 	font-style: italic;
 	text-align: right;
 	display: inline-block;
-	margin-left: 160px;
+	margin-left: 148px;
 	text-decoration: line-through;
 }
 .brand {
 	width: 100%;
 	height: 160px;
-	float: left;
 	background-color: #ffffff;
 	margin-top: 20px;
 }
 .brand_txt {
 	width: 1142px;
-	font-family: 'Raleway-Bold';
+	font-family: 'Raleway-Bold', 'Arial', sans-serif;
 	font-size: 38px;
 	color: #eaeaea;
 	display: inline-block;
@@ -374,15 +375,287 @@ h2 {
 .instagramm {
 	width: 100%;
 	height: 350px;
+	background-color: #eaeaea;
+}
+.instaicon {
+	margin-top: 50px;
+	margin-left: 448px;
+	float: left;
+}
+.instagramm_txt, .instagramm_txtmini {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #333333;
+	font-size: 21px;
+	font-weight: 900;
+	font-style: italic;
+	text-align: left;
+	display: inline-block;
+	margin-top: 51px;
+	margin-left: 7px;
+}
+.instagramm_txtmini {
+	font-size: 18px;
+}
+.photo_instagramm {
+	margin-top: 29px;
+}
+.social_big {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.facebook {
+	width: 390px;
+	height: 100%;
+	background-color: #3b5997;
+}
+.twitter {
+	width: 390px;
+	height: 100%;
+	background-color: #3fccfd;
+}
+.pinterest {
+	width: 390px;
+	height: 100%;
+	background-color: #cb2027;
 }
 .social_button {
 	width: 100%;
-	height: 150px;
+	height: 100%;
+	display: block;
+}
+.big_icon {
+	width: 60px;
+	height: 65px;
+	background-image: url(img/bigsprite.png);
+	margin-top: 41px;
+	margin-left: 166px;
+}
+.facebook_button {
+	background-position: 0px 0px;
+}
+.twitter_button {
+	background-position: -86px 0px;
+}
+.pinterest_button {
+	background-position: -176px 0px;
 }
 /*футер*/
-.footer {
-	width: 100%;
+footer {
+	width: 1500px;
 	height: 348px;
 	background-color: #373737;
 	align-self: flex-end;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.footer_menu {
+	width: 1117px;
+	height: 162px;
+	margin-top: 70px;
+	margin-left: 195px;
+}
+.footer_heading {
+	font-family: 'Raleway', 'Arial', sans-serif;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: left;
+	display: inline-block;
+	margin-bottom: 22px;
+}
+.column_item {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: left;
+}
+.footer_column,
+.footer_column2,
+.footer_column3,
+.newsletter,
+.about_us {
+	width: 200px;
+	height: 117px;
+	float: left;
+}
+.newsletter {
+	width: 300px;
+	margin-left: -18px;
+}
+.newsletter_txt {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #f8f8f8;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 12px;
+	text-align: left;
+	margin-top: -17px;
+}
+input[type="email"] {
+	width: 175px;
+	height: 30px;
+	background-color: #fff51f;
+	margin-top: 18px;
+	border-style: none;
+}
+input[type="email"]::placeholder {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #333333;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 21px;
+	text-align: left;
+	text-transform: uppercase;
+	padding-left: 11px;
+}
+input[type="submit"] {
+	width: 71px;
+	height: 30px;
+	background-color: #000000;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 21px;
+	text-align: left;
+	text-transform: uppercase;
+	padding-left: 13px;
+	margin-left: -2px;
+	border-style: none;
+}
+.payment {
+	width: 300px;
+	height:22px;
+	margin-top: 46px;
+	margin-left: -16px;
+}
+.payment_icon {
+	width: 39px;
+	height: 22px;
+	background-image: url(img/sprite_pal.png);
+	display: inline-block;
+	margin-right: 3px;
+}
+.aex {
+	background-position: 0px 0px;
+}
+.mcard {
+	background-position: -46px 0px;
+}
+.maestero {
+	background-position: -92px 0px;
+}
+.paypal {
+	background-position: -137px 0px;
+}
+.discover {
+	background-position: -180px 0px;
+}
+.visa {
+	background-position: -226px 0px;
+}
+.about_us_txt {
+	width: 232px;
+	height: 85px;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 12px;
+	text-align: left;
+	display: block;
+	margin-top: -17px;
+}
+.phone {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 23.4px;
+	text-align: left;
+	display: inline-block;
+}
+.phone_number {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: left;
+	display: inline-block;
+	margin-left: 12px;
+}
+.mail {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #faef03;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: left;
+	display: inline-block;
+	margin-top: -8px;
+	margin-left: 16px;
+}
+/*разберись почему не на всю ширину*/
+.footer_down {
+	width: 100%;
+	height: 47px;
+	background-color: #333333;
+	align-self: flex-end;
+}
+.footer_down_txt {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	color: #dad9d9;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 21.6px;
+	text-align: left;
+	margin-top: 16px;
+	margin-left: 170px;
+	display: inline-block;
+	float: left;
+}
+.social_down {
+	width: 185px;
+	height:15px;
+	float: right;
+	margin-top: 19px;
+	margin-right: 179px;
+}
+.social_icon_down {
+	width: 15px;
+	height: 15px;
+	background-image: url(img/sprite_down.png);
+	display: inline-block;
+	margin-right: 4px;
+}
+.fb_down {
+	background-position: 0px 0px;
+}
+.twt_down {
+	background-position: -21px 0px;
+}
+.pnt_down {
+	background-position: -47px 0px;
+	margin-left: 3px;
+}
+.g_down {
+	background-position: -76px 0px;
+	margin-left: 7px;
+}
+.tm_down {
+	background-position: -105px 0px;
+	margin-left: 5px;
+}
+.insta_down {
+	background-position: -133px 0px;
+	margin-left: 4px;
+}
+.rs_down {
+	background-position: -162px 0px;
+	margin-left: 4px;
 }
